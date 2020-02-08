@@ -17,7 +17,7 @@
             android:background="#007600"
             android:paddingTop="8dp"
             android:paddingBottom="8dp"
-            android:text="@string/HomePageTitle"
+            android:text="Nutrinex"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="32sp"
