@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">NutrilLine</string>
+    <string name="Add_allergens_Title">ADD FOOD ALLERGENS</string>
+    <string name="Add_Allergens_title2">Add Ingredients that you are allergic to</string>
+    <string name="HomePageTitle">NutrilLine</string>
+    <string name="scanButtonText">Scan Barcode</string>
+    <string name="dining_Location_Button">Dining Locations</string>
+    <string name="campus_dining_Button">Campus Dining</string>
+    <string name="supportButton">Support</string>
+    <string name="Emergency_Call_Button">Emergency Call</string>
+    <string name="add_Button_Text">Add</string>
+    <string-array name="allergen_List">
+        <item>Milk</item>
+        <item>Eggs</item>
+        <item>Fish</item>
+        <item>Crab</item>
+        <item>Lobster</item>
+        <item>Shrimp</item>
+        <item>Almond</item>
+        <item>Brazil Nut</item>
+        <item>Cashew Nut</item>
+        <item>Chestnut</item>
+        <item>Hazelnut</item>
+        <item>Macadamia Nut</item>
+        <item>Pecan Nut</item>
+        <item>Pine Nut</item>
+        <item>Pistachio</item>
+        <item>Walnut</item>
+        <item>Chickpea</item>
+        <item>Lentil</item>
+        <item>Lupin</item>
+        <item>Peanut</item>
+        <item>Pea</item>
+        <item>Soy</item>
+        <item>Soybean</item>
+        <item>Barley</item>
+        <item>Corn</item>
+        <item>Maize</item>
+        <item>Oat</item>
+        <item>Rice</item>
+        <item>Rye</item>
+        <item>Wheat</item>
+        <item>Sesame</item>
+        <item>Meat</item>
+        <item>Gelatin</item>
+    </string-array>
+    <string name="Done_Adding_Button">Done</string>
+    <string name="PatientsButtonText">Patients</string>\
+</resources>

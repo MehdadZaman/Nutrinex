@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomePage">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#007600"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/HomePageTitle"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/SeaWolf_Image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/index" />
+
+        <Button
+            android:id="@+id/ScanButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SeaWolf_Image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="32dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rounded_corner_button"
+            android:text="@string/scanButtonText"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:onClick="gotoQRScanner"/>
+        <Button
+            android:id="@+id/ScanLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ScanButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="32dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rounded_corner_button"
+            android:text="Scan Label"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:onClick="incrementTextualVision"/>
+        <Button
+            android:id="@+id/manualInputHomePage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ScanLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="32dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rounded_corner_button"
+            android:text="Add Meal Nutrition Manually"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:onClick="manualPageClick"/>
+
+        <Button
+            android:id="@+id/dailyIntake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/manualInputHomePage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/rounded_corner_button"
+            android:onClick="currentNutritionalIntakeClick"
+            android:text="Current Nutritional Intakes"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/allNutritionalLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dailyIntake"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/rounded_corner_button"
+            android:text="All Nutritional Logs"
+            android:onClick="allNutritionalLogsClick"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/messagesHomePage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/allNutritionalLogs"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/rounded_corner_button"
+            android:onClick="goToMessagePage"
+            android:text="Messages"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/emergencyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messagesHomePage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/rounded_corner_button"
+            android:text="Call Doctor"
+            android:onClick="onClickEmergencyCall"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/emergencyButton"
+            android:layout_marginRight="32dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/rounded_corner_button"
+            android:text="Settings"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:onClick="addAllergiesClick"/>
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settingsButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="32dp"
+            android:background="@color/common_google_signin_btn_text_light_default"
+            android:text="Logout"
+            android:onClick="onClickLogout"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailHomePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoutButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="32dp"
+            android:text="email" />
+    </RelativeLayout>
+</ScrollView>

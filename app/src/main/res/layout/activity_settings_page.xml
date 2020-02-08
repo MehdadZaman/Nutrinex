@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsPage">
+    <RelativeLayout
+        android:id="@+id/SpinnerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/settingsPageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Settings"
+            android:textSize="45sp"
+            android:background="#007600"
+            android:textColor="@android:color/white"/>
+
+
+        <LinearLayout
+            android:id="@+id/userInfoSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/settingsPageTitle"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="User Information"
+                android:layout_gravity="center"
+                android:textSize="24sp"/>
+            <!--Age-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:paddingLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Age: "
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/ageNumber"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="34dp"
+                    android:inputType="number"
+                    android:maxLength="3" />
+            </LinearLayout>
+            <!--Weight-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Weight: "
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/weightNumber"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="3" />
+            </LinearLayout>
+            <!--Height -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:text="Height: "
+                    android:textSize="20sp" />
+                <!--Height (feet) -->
+                <EditText
+                    android:id="@+id/heightNumberFeet"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ft."
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"/>
+                <!--Height (inches) -->
+                <EditText
+                    android:id="@+id/heightNumberInches"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="in."
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+            <!--Gender-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Gender: "
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp">
+                    <RadioButton
+                        android:id="@+id/radio_button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="Male" />
+                    <RadioButton
+                        android:id="@+id/radio_button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="Female" />
+                    <RadioButton
+                        android:id="@+id/radio_button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:text="Other" />
+                </RadioGroup>
+            </LinearLayout>
+            <CheckBox
+                android:id="@+id/manualFillNutrition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Input maximum daily intakes manually"
+                android:textColor="@android:color/darker_gray"
+                android:onClick="setManualVisibility"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/manualNutritionInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/userInfoSettings"
+            android:gravity="center"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:padding="2dp"
+                android:text="Daily Maximum Nutritional Values"
+                android:layout_gravity="center"
+                android:textSize="24sp"/>
+
+            <!--Calories-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Calories: "
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/maxCalories"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="calories"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <!--Fat-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Fat: "
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/maxFat"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="kilocalories"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <!--Fiber-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="5dp"
+                    android:text="Fiber: "
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/maxFiber"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="grams"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <!--Sodium-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Sodium: "
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/maxSodium"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="milligrams"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <!--Protein-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Protein: "
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/maxProtein"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="3" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="grams"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resetInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="If you want your nutritional values to be auto-filled and you are not a new user, check the manual input box and set all values to 0. Then click save"
+            android:layout_below="@+id/manualNutritionInput"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/button_start_quiz"
+            android:onClick="saveSettingsClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/resetInfo"
+            android:text="Save" />
+
+    </RelativeLayout>
+</ScrollView>

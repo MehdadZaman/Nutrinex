@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyLogPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/barChartTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Daily Intake Chart"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart2"
+            android:layout_width="match_parent"
+            android:layout_height="400sp"
+            android:layout_below="@+id/barChartTitle2">
+        </com.github.mikephil.charting.charts.BarChart>
+
+        <TextView
+            android:id="@+id/warningDescription2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/barChart2"
+            android:layout_marginLeft="8dp"
+            android:gravity="left"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <LinearLayout
+            android:id="@+id/description2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/warningDescription2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nutritionalNamesIntakes2"
+                android:text="\nCalories:\nFat:\nFiber:\nSodium:\nProtein:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/currentNumberIntakes2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/dailyNumberIntakes2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

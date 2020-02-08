@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PatientsListPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/PatientsListPageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#007600"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Patients"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/logDay7_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lineLog7_02"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:onClick="goToPatient"
+                    android:text="Jahin Imtiaz"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:background="@drawable/rounded_corner_button"
+                    android:layout_margin="12dp"/>
+
+                <Button
+                    android:id="@+id/Email7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lineLog3_02"
+                    android:layout_weight="3"
+                    android:background="@drawable/gmail_icon3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:onClick="goToEmail"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:layout_margin="16dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_green_dark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+            <View
+                android:id="@+id/lineLog6_02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/holo_green_dark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/logDay6"
+                    android:onClick="goToPatient"
+                    android:text="Mehdad Zaman"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/lineLog6_02"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_button"
+                    android:layout_margin="12dp"/>
+
+                <Button
+                    android:id="@+id/Email6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lineLog3_02"
+                    android:layout_weight="3"
+                    android:background="@drawable/gmail_icon3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:onClick="goToEmail"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:layout_margin="16dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_green_dark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+            <View
+                android:id="@+id/lineLog5_02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/holo_green_dark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/logDay5"
+                    android:onClick="goToPatient"
+                    android:text="Nahin Imtiaz"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/lineLog5_02"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_button"
+                    android:layout_margin="12dp"/>
+
+                <Button
+                    android:id="@+id/Email5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lineLog3_02"
+                    android:layout_weight="3"
+                    android:background="@drawable/gmail_icon3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:onClick="goToEmail"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:layout_margin="16dp">
+                </Button>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_green_dark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+            <View
+                android:id="@+id/lineLog4_02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/holo_green_dark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/logDay4"
+                    android:onClick="goToPatient"
+                    android:text="Justin Chassin"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/lineLog4_02"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_button"
+                    android:layout_margin="12dp"/>
+
+                <Button
+                    android:id="@+id/Email4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lineLog3_02"
+                    android:layout_weight="3"
+                    android:background="@drawable/gmail_icon3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:onClick="goToEmail"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:layout_margin="16dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_green_dark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+            <View
+                android:id="@+id/lineLog3_02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/holo_green_dark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/logDay3"
+                    android:onClick="goToPatient"
+                    android:text="Sohum Pandey"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/lineLog3_02"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_button"
+                    android:layout_margin="12dp"/>
+
+                <Button
+                    android:id="@+id/Email3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lineLog3_02"
+                    android:layout_weight="3"
+                    android:background="@drawable/gmail_icon3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:onClick="goToEmail"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:layout_margin="16dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_green_dark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+            <View
+                android:id="@+id/lineLog2_02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/holo_green_dark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/logDay2"
+                    android:onClick="goToPatient"
+                    android:text="Ritwik Banerjee"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/lineLog2_02"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_button"
+                    android:layout_margin="12dp"/>
+
+                <Button
+                    android:id="@+id/Email2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lineLog2_02"
+                    android:layout_weight="3"
+                    android:background="@drawable/gmail_icon3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:onClick="goToEmail"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:layout_margin="16dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_green_dark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp">
+            <View
+                android:id="@+id/lineLog1_02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/holo_green_dark"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/logDay1"
+                    android:onClick="goToPatient"
+                    android:text="Fred Respoli"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@+id/lineLog1_02"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_button"
+                    android:layout_margin="12dp"/>
+
+                <Button
+                    android:id="@+id/Email1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lineLog1_02"
+                    android:layout_weight="3"
+                    android:background="@drawable/gmail_icon3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:onClick="goToEmail"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:layout_margin="16dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_green_dark"/>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:onClick="backToDoctorHome"
+            android:layout_marginTop="50dp"
+            android:text="Back Home"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+</ScrollView>

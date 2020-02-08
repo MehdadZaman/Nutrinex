@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "316191640887",
+    "firebase_url": "https://nutrilline-b9054.firebaseio.com",
+    "project_id": "nutrilline-b9054",
+    "storage_bucket": "nutrilline-b9054.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316191640887:android:ea65ce24fbc3999ac41eb2",
+        "android_client_info": {
+          "package_name": "android.example.nutrilline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316191640887-8kl8fnj07438ik7i6ot5a5i28akfdju7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "android.example.nutrilline",
+            "certificate_hash": "c5489927106f02f5084b00e5a4bf4de27f08147e"
+          }
+        },
+        {
+          "client_id": "316191640887-e353sjj8tghsp04oo8cendm079574eco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCanIAp3iNGcBetd1dL4DWs0Lb5Ke-Gyh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316191640887-e353sjj8tghsp04oo8cendm079574eco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

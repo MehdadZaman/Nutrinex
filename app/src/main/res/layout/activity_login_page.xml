@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="NutriLine"
+            android:textSize="45sp"
+            android:background="#007600"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/emailEnter"
+            android:hint="Email"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="275dp"
+            android:layout_marginBottom="10dp"
+            android:outlineSpotShadowColor="#007600"/>
+
+        <EditText
+            android:id="@+id/passwordEnter"
+            android:hint="Password"
+            android:inputType="textWebPassword"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/emailEnter"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/incorrectCredentials"
+            android:text="Email or password is incorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/passwordEnter"
+            android:visibility="invisible"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/incorrectCredentials"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="logInClick"
+            android:text="Log in" />
+
+        <TextView
+            android:id="@+id/signUpHere"
+            android:text="Sign up here"
+            android:onClick = "signUpHereClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:textColor="#0000CD"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpHere"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textForgot"
+                android:text="Forgot "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textYourPassword"
+                android:text="your password "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0000CD"
+                android:onClick="resetPasswordClick"/>
+
+            <TextView
+                android:id="@+id/textOr"
+                android:text="or to "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textVerifyYourAccount"
+                android:text="verify your account?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0000CD"
+                android:onClick="verifyAccountClick"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManualNutritionAdditionPage">
+
+    <RelativeLayout
+        android:id="@+id/SpinnerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/settingsPageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Add Meal Nutrition"
+            android:textSize="32sp"
+            android:background="#007600"
+            android:textColor="@android:color/white"/>
+
+        <LinearLayout
+            android:id="@+id/manualNutritionInputIntake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/settingsPageTitle"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:padding="2dp"
+                android:text="Daily Maximum Nutritional Values"
+                android:layout_gravity="center"
+                android:textSize="24sp"/>
+
+            <!--Calories-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Calories: "
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/intakeCalories"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="calories"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <!--Fat-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Fat: "
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/intakeFat"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="kilocalories"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <!--Fiber-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="5dp"
+                    android:text="Fiber: "
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/intakeFiber"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="grams"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <!--Sodium-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="Sodium: "
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/intakeSodium"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="4" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="milligrams"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <!--Protein-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Protein: "
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/intakeProtein"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"
+                    android:maxLength="3" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="grams"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonAddIntake"
+            android:onClick="addMealClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/manualNutritionInputIntake"
+            android:layout_margin="20dp"
+            android:text="Save" />
+
+    </RelativeLayout>
+
+</ScrollView>

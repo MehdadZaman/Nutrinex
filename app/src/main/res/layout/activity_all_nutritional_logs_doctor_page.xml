@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllNutritionalLogsDoctorPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dailyNutritionalLogs_02"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#007600"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Nutritional Logs"
+            android:textColor="@android:color/white"
+            android:textSize="35sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:onClick="goToLogFeb7_02">
+            <View
+                android:id="@+id/lineLog7_02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/holo_green_dark"/>
+            <TextView
+                android:id="@+id/logDay7_02"
+                android:text="Friday, February 7th"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/lineLog7_02"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_green_dark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:onClick="goToLogFeb6_02">
+            <View
+                android:id="@+id/lineLog6_02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/holo_green_dark"/>
+            <TextView
+                android:id="@+id/logDay6_02"
+                android:text="Thursday, February 6th"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/lineLog6_02"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_green_dark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:onClick="goToLogFeb5_02">
+            <View
+                android:id="@+id/lineLog5_02"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/holo_green_dark"/>
+            <TextView
+                android:id="@+id/logDay5_02"
+                android:text="Wednesday, February 5th"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/lineLog5_02"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_green_dark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:onClick="goToLogFeb4_02">
+            <View
+                android:id="@+id/lineLog4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/holo_green_dark"/>
+            <TextView
+                android:id="@+id/logDay4_02"
+                android:text="Tuesday, February 4th"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/lineLog4_02"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_green_dark"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:onClick="goToLogFeb3_02">
+            <View
+                android:id="@+id/lineLog3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/holo_green_dark"/>
+            <TextView
+                android:id="@+id/logDay3_02"
+                android:text="Monday, February 3rd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/lineLog3_02"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_green_dark"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="onClickSetMax"
+                android:layout_marginTop="50dp"
+                android:text="Set Max Intakes"
+                android:layout_alignParentLeft="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="backToHomeLogs_02"
+                android:layout_marginTop="50dp"
+                android:text="Back Home"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

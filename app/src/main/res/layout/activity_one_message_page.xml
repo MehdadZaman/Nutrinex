@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OneMessagePage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/dearStatement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Patient,"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/detailInMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dearStatement"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif"
+            android:padding="20dp"
+            android:textColor="@android:color/black"
+            android:text="We have noticed that your sodium level have been a bit higher than usual. Come on in for for a checkup at Stony Brook Medical Center. Doctors may do further testing to identify the cause of the hypernatremia, including measurements of urine volume and concentration. A special test called the water deprivation test is useful in identifying some causes, such as diabetes insipidus. "/>
+
+        <TextView
+            android:id="@+id/thankYouMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Thank you,\n Stony Brook Medical Center "
+            android:layout_below="@+id/detailInMessage"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thankYouMessage"
+            android:layout_alignParentRight="true"
+            android:onClick="backToMessages"
+            android:layout_marginTop="10dp"
+            android:text="Back To Messages" />
+
+    </RelativeLayout>
+
+</ScrollView>
