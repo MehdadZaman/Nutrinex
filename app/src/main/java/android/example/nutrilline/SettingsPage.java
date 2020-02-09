@@ -218,7 +218,7 @@ public class SettingsPage extends AppCompatActivity {
             if(age <= 3) sodium = 1500;
             else if(age <= 8) sodium = 1900;
             else if(age <= 13) sodium = 2200;
-            else fiber = 2300;
+            else sodium = 2300;
         }
 
         if(protein == 0)
